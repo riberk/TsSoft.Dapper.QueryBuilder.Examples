@@ -47,6 +47,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.rtbResult = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.rtbSplitOn = new System.Windows.Forms.RichTextBox();
+            this.dgvParameters = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParameters)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -193,9 +199,9 @@
             this.rtbResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbResult.Location = new System.Drawing.Point(17, 165);
+            this.rtbResult.Location = new System.Drawing.Point(12, 334);
             this.rtbResult.Name = "rtbResult";
-            this.rtbResult.Size = new System.Drawing.Size(445, 96);
+            this.rtbResult.Size = new System.Drawing.Size(438, 131);
             this.rtbResult.TabIndex = 17;
             this.rtbResult.Text = "";
             // 
@@ -209,11 +215,59 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // rtbSplitOn
+            // 
+            this.rtbSplitOn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbSplitOn.Location = new System.Drawing.Point(12, 271);
+            this.rtbSplitOn.Name = "rtbSplitOn";
+            this.rtbSplitOn.Size = new System.Drawing.Size(438, 57);
+            this.rtbSplitOn.TabIndex = 20;
+            this.rtbSplitOn.Text = "";
+            // 
+            // dgvParameters
+            // 
+            this.dgvParameters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvParameters.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvParameters.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
+            this.Type,
+            this.Value});
+            this.dgvParameters.Location = new System.Drawing.Point(12, 165);
+            this.dgvParameters.Name = "dgvParameters";
+            this.dgvParameters.Size = new System.Drawing.Size(438, 101);
+            this.dgvParameters.TabIndex = 21;
+            // 
+            // Name
+            // 
+            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Name.HeaderText = "Имя";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Type
+            // 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Type.HeaderText = "Тип";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // Value
+            // 
+            this.Value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Value.HeaderText = "Значение";
+            this.Value.Name = "Value";
+            this.Value.ReadOnly = true;
+            // 
             // TestQueryBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 278);
+            this.ClientSize = new System.Drawing.Size(462, 477);
+            this.Controls.Add(this.dgvParameters);
+            this.Controls.Add(this.rtbSplitOn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rtbResult);
             this.Controls.Add(this.label8);
@@ -235,6 +289,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TestQueryBuilder";
             this.Text = "TestQueryBuilder";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParameters)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,6 +316,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox rtbResult;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox rtbSplitOn;
+        private System.Windows.Forms.DataGridView dgvParameters;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Value;
 
     }
 }
