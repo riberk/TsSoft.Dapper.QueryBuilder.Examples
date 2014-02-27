@@ -287,7 +287,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.label1);
-            this.Name = "TestQueryBuilder";
             this.Text = "TestQueryBuilder";
             ((System.ComponentModel.ISupportInitialize)(this.dgvParameters)).EndInit();
             this.ResumeLayout(false);
